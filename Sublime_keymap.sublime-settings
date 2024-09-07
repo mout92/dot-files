@@ -1,0 +1,15 @@
+[
+	{
+        "keys": ["j", "j"], "command": "exit_insert_mode",
+        "context":
+        [
+            { "key": "setting.command_mode", "operand": false },
+            { "key": "setting.is_widget", "operand": false }
+        ]
+    },
+
+    { "keys": ["ctrl+shift+m"], "command": "toggle_side_bar" },
+    { "keys": ["ctrl+m"], "command": "focus_side_bar" },
+    { "keys": ["alt+1"], "command": "focus_group", "args": { "group": 0 } },
+    { "keys": ["alt+2"], "command": "focus_group", "args": { "group": 1 } },
+]

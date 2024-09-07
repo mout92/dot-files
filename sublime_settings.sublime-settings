@@ -1,0 +1,8 @@
+{
+	"ignored_packages": [""],
+	"theme": "Default Dark.sublime-theme",
+	"color_scheme": "Monokai Pro.sublime-color-scheme",
+	"font_face": "Fira Code",
+	"font_size": 12,
+	"overlay_scroll_bars": "enabled",
+}
