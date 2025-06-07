@@ -1,4 +1,4 @@
-" Install Plug first
+" For Plug
 call plug#begin('~/.vim/plugged')
 Plug 'sainnhe/gruvbox-material'
 call plug#end()
@@ -9,6 +9,7 @@ source $VIMRUNTIME/defaults.vim
 " For Gruvbox 
 set background=dark
 set termguicolors
+let g:gruvbox_material_background="hard"
 colorscheme gruvbox-material
 
 " For C programming
