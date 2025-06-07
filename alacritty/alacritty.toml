@@ -1,9 +1,9 @@
 [font]
-size = 16.0
+size = 14.0
 
 [font.normal]
-family = "Fira Code"
-style = "SemiBold"
+family = "monospace"
+style = "Bold"
 
 [window]
 dimensions = { columns = 120, lines = 40}

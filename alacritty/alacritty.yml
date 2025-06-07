@@ -1,8 +1,8 @@
 font:
-  size: 16.0
+  size: 14.0
   normal:
-    family: "Fira Code"
-    style: "SemiBold"
+    family: "monospace"
+    style: "Bold"
 
 window:
   dimensions:
