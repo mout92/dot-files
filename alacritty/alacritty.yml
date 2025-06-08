@@ -2,7 +2,7 @@ font:
   size: 14.0
   normal:
     family: "monospace"
-    style: "Bold"
+    style: "bold"
 
 window:
   dimensions:
@@ -37,4 +37,3 @@ colors:
     magenta: "#d3869b"
     cyan: "#89b482"
     white: "#d4be98"
-
