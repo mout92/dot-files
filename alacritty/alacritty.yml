@@ -2,38 +2,36 @@ font:
   size: 14.0
   normal:
     family: "monospace"
-    style: "bold"
 
 window:
   dimensions:
     columns: 120
-    lines: 40
+    lines: 35
   padding:
     x: 8
     y: 8
-  decorations: "none"
 
 colors:
   primary:
-    background: "#1d2021"
-    foreground: "#d4be98"
+    background: '0x000000'
+    foreground: '0xffffd7'
 
   normal:
-    black: "#32302f"
-    red: "#ea6962"
-    green: "#a9b665"
-    yellow: "#d8a657"
-    blue: "#7daea3"
-    magenta: "#d3869b"
-    cyan: "#89b482"
-    white: "#d4be98"
+    black:   '0x000000'
+    red:     '0xaf5f5f'
+    green:   '0x5f875f'
+    yellow:  '0x87875f'
+    blue:    '0x5f87af'
+    magenta: '0x5f5f87'
+    cyan:    '0x5f8787'
+    white:   '0x6c6c6c'
 
   bright:
-    black: "#32302f"
-    red: "#ea6962"
-    green: "#a9b665"
-    yellow: "#d8a657"
-    blue: "#7daea3"
-    magenta: "#d3869b"
-    cyan: "#89b482"
-    white: "#d4be98"
+    black:   '0x444444'
+    red:     '0xff8700'
+    green:   '0x87af87'
+    yellow:  '0xffffaf'
+    blue:    '0x8fafd7'
+    magenta: '0x8787af'
+    cyan:    '0x5fafaf'
+    white:   '0xffffd7'
