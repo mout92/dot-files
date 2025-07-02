@@ -1,22 +1,13 @@
-# Read `man 5 sway` for a complete reference.
-
-# Mod key
 set $mod Mod4
 
-# Home row direction keys, like vim
 set $left h
 set $down j
 set $up k
 set $right l
 
-# Your preferred terminal emulator
-set $term kitty 
+default_border pixel 0
 
-# Application launcher
-set $menu rofi -show
-
-# Background
-output * bg /home/martijn/Pictures/Wallpapers/background2.png fill
+# output * bg /home/martijn/.config/background.jpg fill
 
 input type:touchpad {
    dwt enabled
@@ -25,17 +16,18 @@ input type:touchpad {
    middle_emulation enabled
 }
 
-# Start a terminal
-bindsym $mod+Return exec $term
+# Brightness control
+bindsym XF86MonBrightnessUp exec brightnessctl set +10%
+bindsym XF86MonBrightnessDown exec brightnessctl set 10%-
 
-# Start browser
-bindsym $mod+shift+Return exec firefox
+# Start a terminal
+bindsym $mod+Return exec foot
 
 # Kill focused window
 bindsym $mod+q kill
 
 # Start your launcher
-bindsym $mod+d exec $menu
+bindsym $mod+d exec rofi -show drun
 
 # Floating windows
 floating_modifier $mod normal
