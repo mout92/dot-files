@@ -6,8 +6,6 @@ set $up k
 set $right l
 
 # Window settings
-client.focused #4C7899 #285577 #FFFFFF #285577 #285577
-font inter 10
 default_border pixel 0
 
 # Trackpad setting
@@ -22,10 +20,13 @@ input type:touchpad {
 bindsym XF86MonBrightnessUp exec brightnessctl set +10%
 bindsym XF86MonBrightnessDown exec brightnessctl set 10%-
 
+set $menu dmenu_path | dmenu | xargs swaymsg exec --
+
 # bindsym
-bindsym $mod+Return exec foot
+# bindsym $mod+p exec wofi --show drun
 bindsym $mod+q kill
-bindsym $mod+d exec rofi -show drun
+bindsym $mod+Return exec foot
+bindsym $mod+Backslash exec firefox
 bindsym $mod+Shift+c reload
 bindsym $mod+Shift+q exec swaynag -t warning -m '' -B 'Yes, exit sway' 'swaymsg exit'
 
