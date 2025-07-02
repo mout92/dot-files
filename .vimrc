@@ -7,12 +7,6 @@ call plug#end()
 " For Debian
 source $VIMRUNTIME/defaults.vim
 
-" For Gruvbox 
-" set background=dark
-" let g:gruvbox_material_background="hard"
-" set termguicolors
-" colorscheme gruvbox-material
-
 colorscheme nord
 
 " For C programming

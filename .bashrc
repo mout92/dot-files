@@ -58,9 +58,9 @@ fi
 
 # red prompt when using SSH
 if [ "$SSH_CONNECTION" ]; then
-   PS1='${debian_chroot:+($debian_chroot)}\[\033[01;31m\]\u@\h\[\033[00m\]:\[\033[01;34m\]$PWD\[\033[00m\] > '
+   PS1='\033[1;31m$(hostname)\031[0;0m > '
 else
-   PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]$PWD\[\033[00m\] > '
+   PS1='\033[1;34m$(hostname)\033[0;0m > '
 fi
 unset color_prompt force_color_prompt
 
