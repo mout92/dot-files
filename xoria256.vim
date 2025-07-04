@@ -1,106 +1,59 @@
-" Vim color file
-"
-" Name:         xoria256.vim
-" Version:      1.8
-" Maintainer:   Dmitriy Y. Zotikov (xio) <xio@ungrund.org>
-"
-" Should work in recent 256 color terminals.  88-color terms like urxvt are
-" NOT supported.
-"
-" Don't forget to install 'ncurses-term' and set TERM to xterm-256color or
-" similar value.
-"
-" Color numbers (0-255) see:
-" http://www.calmar.ws/vim/256-xterm-24bit-rgb-color-chart.html
-"
-" For a specific filetype highlighting rules issue :syntax list when a file of
-" that type is opened.
-"
-" TODO: link colours instead of setting values explicitly
-"
-" Copyright 2008-2019 Dmitry Zotikov.
-"
-" This program is free software: you can redistribute it and/or modify
-" it under the terms of the GNU General Public License as published by
-" the Free Software Foundation, either version 3 of the License, or
-" (at your option) any later version.
-"
-" This program is distributed in the hope that it will be useful,
-" but WITHOUT ANY WARRANTY; without even the implied warranty of
-" MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-" GNU General Public License for more details.
-"
-" A copy of the GNU General Public License can be found at
-" <https://www.gnu.org/licenses/>.
-
 " Initialisation
-if &t_Co != 256 && ! has("gui_running")
-  echoerr "Please use GUI or a 256-color terminal (which sets t_Co=256)."
-  finish
-endif
-
 set background=dark
-
 hi clear
-
-if exists("syntax_on")
-  syntax reset
-endif
-
 let colors_name = "xoria256"
 
-" Colours
 "" General
-hi Normal           ctermfg=252 guifg=#d0d0d0 ctermbg=234  guibg=#1c1c1c cterm=none      gui=none
-hi Cursor                                     ctermbg=214  guibg=#ffaf00
-hi CursorColumn                               ctermbg=238  guibg=#444444
-hi CursorLine                                 ctermbg=237  guibg=#3a3a3a cterm=none      gui=none
-hi ColorColumn      ctermbg=235 guibg=#2c2d27
-hi Error            ctermfg=15  guifg=#ffffff ctermbg=1    guibg=#800000
-hi ErrorMsg         ctermfg=15  guifg=#ffffff ctermbg=1    guibg=#800000
-hi FoldColumn       ctermfg=247 guifg=#9e9e9e ctermbg=233  guibg=#1c1c1c
-hi Folded           ctermfg=255 guifg=#eeeeee ctermbg=60   guibg=#5f5f87
-hi IncSearch        ctermfg=0   guifg=#000000 ctermbg=223  guibg=#ffdfaf cterm=none      gui=none
-hi LineNr           ctermfg=247 guifg=#9e9e9e ctermbg=233  guibg=#1c1c1c
-hi MatchParen       ctermfg=188 guifg=#dfdfdf ctermbg=68   guibg=#5f87df cterm=bold      gui=bold
-hi NonText          ctermfg=247 guifg=#9e9e9e ctermbg=233  guibg=#1c1c1c cterm=bold      gui=bold
-hi Pmenu            ctermfg=0   guifg=#000000 ctermbg=250  guibg=#bcbcbc
-hi PmenuSel         ctermfg=255 guifg=#eeeeee ctermbg=243  guibg=#767676
-hi PmenuSbar                                  ctermbg=252  guibg=#d0d0d0
-hi PmenuThumb       ctermfg=243 guifg=#767676
-hi Search           ctermfg=0   guifg=#000000 ctermbg=149  guibg=#afdf5f
-hi SignColumn       ctermfg=248 guifg=#a8a8a8
-hi SpecialKey       ctermfg=77  guifg=#5fdf5f
-hi SpellBad         ctermfg=160 guifg=fg      ctermbg=bg                 cterm=underline               guisp=#df0000
-hi SpellBad                                   ctermbg=238                                              guisp=#df0000
-hi SpellCap         ctermfg=189 guifg=#dfdfff ctermbg=bg   guibg=bg      cterm=underline gui=underline
-hi SpellRare        ctermfg=168 guifg=#df5f87 ctermbg=bg   guibg=bg      cterm=underline gui=underline
-hi SpellLocal       ctermfg=98  guifg=#875fdf ctermbg=bg   guibg=bg      cterm=underline gui=underline
-hi StatusLine       ctermfg=15  guifg=#ffffff ctermbg=239  guibg=#4e4e4e cterm=bold      gui=bold
-hi StatusLineNC     ctermfg=249 guifg=#b2b2b2 ctermbg=237  guibg=#3a3a3a cterm=none      gui=none
-hi StatusLineTerm   ctermfg=15  guifg=#ffffff ctermbg=239  guibg=#4e4e4e cterm=bold      gui=bold
-hi StatusLineTermNC ctermfg=249 guifg=#b2b2b2 ctermbg=237  guibg=#3a3a3a cterm=none      gui=none
-hi TabLine          ctermfg=fg  guifg=fg      ctermbg=242  guibg=#666666 cterm=none      gui=none
-hi TabLineFill      ctermfg=fg  guifg=fg      ctermbg=237  guibg=#3a3a3a cterm=none      gui=none
-hi Title            ctermfg=225 guifg=#ffdfff
-hi Todo             ctermfg=0   guifg=#000000 ctermbg=184  guibg=#dfdf00
-hi Underlined       ctermfg=39  guifg=#00afff                            cterm=underline gui=underline
-hi VertSplit        ctermfg=237 guifg=#3a3a3a ctermbg=237  guibg=#3a3a3a cterm=none      gui=none
-hi VIsualNOS        ctermfg=24  guifg=#005f87 ctermbg=153  guibg=#afdfff cterm=none      gui=none
-hi Visual           ctermfg=24  guifg=#005f87 ctermbg=153  guibg=#afdfff
-hi Visual           ctermfg=255 guifg=#eeeeee ctermbg=96   guibg=#875f87
-hi Visual           ctermfg=255 guifg=#eeeeee ctermbg=24   guibg=#005f87
-hi VisualNOS        ctermfg=255 guifg=#eeeeee ctermbg=60   guibg=#5f5f87
-hi WildMenu         ctermfg=0   guifg=#000000 ctermbg=150  guibg=#afdf87 cterm=bold      gui=bold
-hi EndOfBuffer                                ctermbg=NONE guibg=NONE
+hi Normal           ctermfg=252  ctermbg=234   cterm=none
+hi Cursor                        ctermbg=214  
+hi CursorColumn                  ctermbg=238  
+hi CursorLine                    ctermbg=237   cterm=none      
+hi ColorColumn                   ctermbg=235 
+hi Error            ctermfg=15   ctermbg=1    
+hi ErrorMsg         ctermfg=15   ctermbg=1    
+hi FoldColumn       ctermfg=247  ctermbg=233  
+hi Folded           ctermfg=255  ctermbg=60   
+hi IncSearch        ctermfg=0    ctermbg=223   cterm=none      
+hi LineNr           ctermfg=247  ctermbg=234  
+hi MatchParen       ctermfg=188  ctermbg=68    cterm=bold      
+hi NonText          ctermfg=247  ctermbg=233   cterm=bold      
+hi Pmenu            ctermfg=0    ctermbg=250  
+hi PmenuSel         ctermfg=255  ctermbg=243  
+hi PmenuSbar                     ctermbg=252  
+hi PmenuThumb       ctermfg=243 
+hi Search           ctermfg=0    ctermbg=149  
+hi SignColumn       ctermfg=248 
+hi SpecialKey       ctermfg=77  
+hi SpellBad         ctermfg=160  ctermbg=bg    cterm=underline
+hi SpellBad                      ctermbg=238
+hi SpellCap         ctermfg=189  ctermbg=bg    cterm=underline 
+hi SpellRare        ctermfg=168  ctermbg=bg    cterm=underline 
+hi SpellLocal       ctermfg=98   ctermbg=bg    cterm=underline 
+hi StatusLine       ctermfg=15   ctermbg=239   cterm=bold      
+hi StatusLineNC     ctermfg=249  ctermbg=237   cterm=none      
+hi StatusLineTerm   ctermfg=15   ctermbg=239   cterm=bold      
+hi StatusLineTermNC ctermfg=249  ctermbg=237   cterm=none      
+hi TabLine          ctermfg=fg   ctermbg=242   cterm=none      
+hi TabLineFill      ctermfg=fg   ctermbg=237   cterm=none      
+hi Title            ctermfg=225 
+hi Todo             ctermfg=0    ctermbg=184  
+hi Underlined       ctermfg=39                 cterm=underline 
+hi VertSplit        ctermfg=237  ctermbg=237   cterm=none      
+hi VIsualNOS        ctermfg=24   ctermbg=153   cterm=none      
+hi Visual           ctermfg=24   ctermbg=153  
+hi Visual           ctermfg=255  ctermbg=96   
+hi Visual           ctermfg=255  ctermbg=24   
+hi VisualNOS        ctermfg=255  ctermbg=60   
+hi WildMenu         ctermfg=0    ctermbg=150   cterm=bold      
+hi EndOfBuffer                   ctermbg=NONE
 
 "" Syntax highlighting
-hi Comment          ctermfg=244 guifg=#808080
-hi Constant         ctermfg=229 guifg=#ffffaf
-hi Identifier       ctermfg=182 guifg=#dfafdf                            cterm=none
-hi Ignore           ctermfg=238 guifg=#444444
-hi Number           ctermfg=180 guifg=#dfaf87
-hi PreProc          ctermfg=150 guifg=#afdf87
-hi Special          ctermfg=174 guifg=#df8787
-hi Statement        ctermfg=110 guifg=#87afdf                            cterm=none gui=none
-hi Type             ctermfg=146 guifg=#afafdf                            cterm=none gui=none
+hi Comment          ctermfg=244 
+hi Constant         ctermfg=229 
+hi Identifier       ctermfg=182                cterm=none
+hi Ignore           ctermfg=238 
+hi Number           ctermfg=180 
+hi PreProc          ctermfg=150 
+hi Special          ctermfg=174 
+hi Statement        ctermfg=110                cterm=none 
+hi Type             ctermfg=146                cterm=none 
