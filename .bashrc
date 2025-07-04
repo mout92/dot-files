@@ -5,7 +5,7 @@ case $- in
 esac
 
 export HISTFILE=
-exort LESSHISTFILE=
+export LESSHISTFILE=-
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
