@@ -46,7 +46,7 @@ fi
 
 # red prompt when using SSH
 if [ "$SSH_CONNECTION" ]; then
-   PS1='\033[1;31m$(hostname)\031[0;0m > '
+   PS1='\033[1;31m$(hostname)\033[0;0m > '
 else
    PS1='\033[1;34m$(hostname)\033[0;0m > '
 fi
