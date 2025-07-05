@@ -46,7 +46,7 @@ fi
 
 # red prompt when using SSH
 if [ "$SSH_CONNECTION" ]; then
-   PS1='\033[1;31m$(hostname)\033[0;0m > '
+   PS1='\033[1;31m$(hostname)\031[0;0m > '
 else
    PS1='\033[1;34m$(hostname)\033[0;0m > '
 fi
@@ -56,6 +56,7 @@ unset color_prompt force_color_prompt
 alias ls='ls -lhF --group-directories-first --color=auto'
 alias la='ls -A'
 alias vim='vim -i "NONE"'
+alias sus='systemctl suspend'
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
