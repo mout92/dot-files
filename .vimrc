@@ -1,8 +1,7 @@
-" For Debian
+" for Debian
 source $VIMRUNTIME/defaults.vim
-colorscheme xoria256
 
-" For C programming
+" for C programming
 set tabstop=4
 set shiftwidth=4
 set expandtab
