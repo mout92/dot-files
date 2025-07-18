@@ -7,6 +7,7 @@ esac
 export HISTFILE=
 export LESSHISTFILE=-
 export GIT_EDITOR=vim
+export TERM=xterm-256color
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
