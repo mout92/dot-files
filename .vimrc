@@ -10,6 +10,7 @@ set smartindent
 autocmd Filetype c setlocal cindent
 
 " vim environment
+set relativenumber
 set foldmethod=manual
 set fillchars=eob:\ 
 let g:loaded_matchparen=1
