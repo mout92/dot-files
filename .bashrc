@@ -12,5 +12,3 @@ alias la='ls -A'
 alias grep='grep --color=auto'
 alias vim='vim -i "NONE"'
 alias sus='systemctl suspend'
-
-
