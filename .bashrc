@@ -8,7 +8,10 @@ export GIT_EDITOR=vim
 export TERM=xterm-256color
 
 alias ls='ls --group-directories-first --color=auto'
+alias lsl='ls -l'
 alias la='ls -A'
+alias lal='la -l'
+
 alias grep='grep --color=auto'
 alias vim='vim -i "NONE"'
 alias sus='systemctl suspend'
