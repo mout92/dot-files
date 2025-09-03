@@ -6,9 +6,8 @@ PS1='\033[34m\u\033[0m \033[32m\w\033[0m \033[1;33m>\033[0m '
 # Environment variables
 export HISTFILE=
 export LESSHISTFILE=-
-export GIT_EDITOR=vim
 export TERM=xterm-256color
-export SUDO_EDITOR=vim
+export EDITOR=vim
 
 # ls aliases
 alias ls='ls --group-directories-first --color=auto'
