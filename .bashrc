@@ -15,16 +15,10 @@ alias lsl='ls -lh'
 alias la='ls -A'
 alias lal='la -lh'
 
-# Script aliases
-alias t='getdatetime.sh'
-
 # Other aliases
 alias grep='grep --color=auto'
 alias vim='vim -i "NONE"'
 alias sus='systemctl suspend'
 alias shutdown='shutdown now'
-
-# Add scripts dir to path
-if [[ ":$PATH:" != *":$HOME/code/scripts:"* ]]; then
-    PATH=$PATH:~/code/scripts
-fi
+alias t="date '+%F - %H:%M'"
+alias martijn='cd /media/martijn'
