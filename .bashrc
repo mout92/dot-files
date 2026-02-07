@@ -1,7 +1,7 @@
 [[ $- != *i* ]] && return
 
 # Terminal prompt
-PS1='\033[34m\u\033[0m \033[32m\w\033[0m \033[1;33m>\033[0m '
+PS1='> '
 
 # Environment variables
 export HISTFILE=
@@ -18,7 +18,4 @@ alias lal='la -lh'
 # Other aliases
 alias grep='grep --color=auto'
 alias vim='vim -i "NONE"'
-alias sus='systemctl suspend'
-alias shutdown='shutdown now'
 alias t="date '+%F - %H:%M'"
-alias martijn='cd /media/martijn'
