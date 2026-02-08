@@ -1,7 +1,7 @@
 [[ $- != *i* ]] && return
 
 # Terminal prompt
-PS1='> '
+PS1='\[\033[1;33m\]> \[\033[0;0m\]'
 
 # Environment variables
 export HISTFILE=
@@ -18,4 +18,5 @@ alias lal='la -lh'
 # Other aliases
 alias grep='grep --color=auto'
 alias vim='vim -i "NONE"'
-alias t="date '+%F - %H:%M'"
+alias t="date '+%F - %H:%M:%S'"
+alias power="cat /sys/firmware/acpi/platform_profile"
