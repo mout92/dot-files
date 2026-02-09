@@ -1,0 +1,24 @@
+# font
+font=JetBrains Mono
+font-size=28
+
+# size
+indicator-idle-visible
+indicator-radius=100
+indicator-thickness=15
+
+# background color
+color=181818
+
+# normal colors
+inside-color=181818
+ring-color=a17e4d
+key-hl-color=feca88
+
+# wrong colors
+inside-wrong-color=c55555
+ring-wrong-color=712b2b
+
+# verifying colors
+inside-ver-color=456877
+ring-ver-color=82b8c8
