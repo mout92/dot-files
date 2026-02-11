@@ -1,15 +1,22 @@
-width = 800
-height = 600
+width = 600
+height = 75
+background-color = #181818
+
+padding-top = 19
 
 outline-width = 0
 border-width = 4
-border-color = #6b6b6b
+border-color = #456877
 
 prompt-text = ""
 outline-width = 0
 font = "jetbrains mono bold"
 font-size = 16
 
-text-color = #6b6b6b
-selection-color = #d8d8d8
-background-color = #181818
+prompt-text = " > "
+input-color = #d8d8d8
+selection-color = #181818
+prompt-color = #f4bf75
+
+text-cursor = true
+text-cursor-style = block
