@@ -1,0 +1,15 @@
+width = 800
+height = 600
+
+outline-width = 0
+border-width = 4
+border-color = #6b6b6b
+
+prompt-text = ""
+outline-width = 0
+font = "jetbrains mono bold"
+font-size = 16
+
+text-color = #6b6b6b
+selection-color = #d8d8d8
+background-color = #181818
