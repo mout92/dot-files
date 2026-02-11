@@ -1,17 +1,12 @@
 set $mod Mod4
 
-set $left h
-set $down j
-set $up k
-set $right l
-
-# Display settings
-# output DP-1 mode 2560x1440
-# gaps horizontal 320
+set $left j
+set $down h
+set $up l
+set $right k
 
 # Window settings
 default_border pixel 0
-#client.focused #d8a657 #d8a657 #d8a657 #d8a657 #d8a657
 
 # Trackpad setting
 input type:touchpad {
@@ -20,6 +15,8 @@ input type:touchpad {
    natural_scroll enable
    middle_emulation enabled
 }
+
+output * bg #181818 solid_color
 
 # Brightness control
 bindsym XF86MonBrightnessUp exec brightnessctl set +10%
@@ -32,9 +29,9 @@ bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
 bindsym XF86AudioMicMute exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
 
 # Programs
-bindsym $mod+p exec rofi -show drun
+set $menu tofi-run | xargs swaymsg exec --
+bindsym $mod+p exec $menu
 bindsym $mod+Return exec alacritty
-bindsym $mod+Backslash exec chromium
 bindsym $mod+Shift+l exec swaylock
 
 # Sway
@@ -43,16 +40,12 @@ bindsym $mod+Shift+c reload
 bindsym $mod+q kill
 
 # Move your focus around
-bindsym $mod+$left  focus left
-bindsym $mod+$down  focus down
-bindsym $mod+$up    focus up
+bindsym $mod+$left focus left
 bindsym $mod+$right focus right
 
 # Move the focused window with the same, but add Shift
-#bindsym $mod+Shift+$left  move left
-bindsym $mod+Shift+$down  move down
-bindsym $mod+Shift+$up    move up
-#bindsym $mod+Shift+$right move right
+bindsym $mod+Shift+$left move left
+bindsym $mod+Shift+$right move right
 
 # Switch to workspace
 bindsym Alt+Tab workspace next
