@@ -1,12 +1,13 @@
+# Defaults
 set $mod Mod4
-
 set $left j
 set $down h
 set $up l
 set $right k
 
-# Window settings
+# Display settings
 default_border pixel 0
+output * bg #181818 solid_color
 
 # Trackpad setting
 input type:touchpad {
@@ -16,26 +17,21 @@ input type:touchpad {
    middle_emulation enabled
 }
 
-output * bg #181818 solid_color
 
 # Brightness control
-bindsym XF86MonBrightnessUp exec brightnessctl set +10%
-bindsym XF86MonBrightnessDown exec brightnessctl set 10%-
+bindsym XF86MonBrightnessUp exec brightnessctl set +5%
+bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
 
-# Pulse Audio control
+# PulseAudio control
 bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
 bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
 bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
 bindsym XF86AudioMicMute exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
 
-# Programs
-set $menu tofi-run | xargs swaymsg exec --
-bindsym $mod+p exec $menu
+# Bindings
 bindsym $mod+Return exec alacritty
-bindsym $mod+Shift+l exec swaylock
-
-# Sway
 bindsym $mod+Shift+q exec swaymsg exit
+bindsym $mod+Shift+l exec swaylock
 bindsym $mod+Shift+c reload
 bindsym $mod+q kill
 
