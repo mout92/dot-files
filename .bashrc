@@ -3,6 +3,11 @@
 # Terminal prompt
 PS1='\[\033[1;33m\]> \[\033[0;0m\]'
 
+# Ditch rofi
+run() {
+    setsid -f "$@" >/dev/null 2>&1
+}
+
 # Environment variables
 export HISTFILE=
 export LESSHISTFILE=-
@@ -19,4 +24,5 @@ alias lal='la -lh'
 alias grep='grep --color=auto'
 alias vim='vim -i "NONE"'
 alias t="date '+%F - %H:%M:%S'"
-alias power="cat /sys/firmware/acpi/platform_profile"
+# alias power="cat /sys/firmware/acpi/platform_profile"
+alias py="python3"
