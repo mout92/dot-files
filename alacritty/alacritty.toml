@@ -6,6 +6,7 @@ family = "jetbrains mono"
 style = "extra bold"
 
 [window]
-dimensions =  { columns = 80, lines = 30}
-padding =     { x = 8, y = 8 }
-decorations = "none"
+padding = { x = 8, y = 8 }
+
+[mouse]
+hide_when_typing = true
