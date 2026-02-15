@@ -6,7 +6,8 @@ set $up l
 set $right k
 
 # Display settings
-default_border pixel 0
+default_border pixel 3
+client.focused #000000 #000000 #000000 #000000 #6a9fb5
 output * bg #181818 solid_color
 
 # Trackpad setting
@@ -16,7 +17,6 @@ input type:touchpad {
    natural_scroll enable
    middle_emulation enabled
 }
-
 
 # Brightness control
 bindsym XF86MonBrightnessUp exec brightnessctl set +5%
