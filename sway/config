@@ -6,9 +6,12 @@ set $up l
 set $right k
 
 # Display settings
-default_border pixel 3
-client.focused #000000 #000000 #000000 #000000 #6a9fb5
+default_border pixel 2
+client.focused #000000 #000000 #000000 #f4bf75 #f4bf75
 output * bg #181818 solid_color
+
+# compose key
+input * xkb_options compose:ralt
 
 # Trackpad setting
 input type:touchpad {
