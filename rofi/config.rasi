@@ -1,8 +1,0 @@
-configuration {
-    modes: "drun";
-    font: "jetbrains mono extrabold 16";
-    drun-display-format: "{name}";
-    display-drun: "run";
-}
-
-@theme "/usr/share/rofi/themes/android_notification.rasi"
