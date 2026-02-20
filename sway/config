@@ -1,19 +1,15 @@
-# Defaults
 set $mod Mod4
 set $left j
 set $down h
 set $up l
 set $right k
 
-# Display settings
 default_border pixel 3
 client.focused #6a9fb5 #6a9fb5 #6a9fb5 #6a9fb5 #6a9fb5
 output * bg #181818 solid_color
+gaps horizontal 240
 
-# compose key
 input * xkb_options compose:ralt
-
-# Trackpad setting
 input type:touchpad {
    dwt enabled
    tap enabled
@@ -21,32 +17,25 @@ input type:touchpad {
    middle_emulation enabled
 }
 
-# Brightness control
 bindsym XF86MonBrightnessUp exec brightnessctl set +5%
 bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
-
-# PulseAudio control
 bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
 bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
 bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
 bindsym XF86AudioMicMute exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
 
-# Bindings
 bindsym $mod+Return exec alacritty
 bindsym $mod+Shift+q exec swaymsg exit
 bindsym $mod+Shift+l exec swaylock
 bindsym $mod+Shift+c reload
 bindsym $mod+q kill
 
-# Move your focus around
 bindsym $mod+$left focus left
 bindsym $mod+$right focus right
 
-# Move the focused window with the same, but add Shift
 bindsym $mod+Shift+$left move left
 bindsym $mod+Shift+$right move right
 
-# Switch to workspace
 bindsym Alt+Tab workspace next
 bindsym $mod+1 workspace number 1
 bindsym $mod+2 workspace number 2
@@ -59,7 +48,6 @@ bindsym $mod+8 workspace number 8
 bindsym $mod+9 workspace number 9
 bindsym $mod+0 workspace number 10
 
-# Move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace number 1
 bindsym $mod+Shift+2 move container to workspace number 2
 bindsym $mod+Shift+3 move container to workspace number 3
