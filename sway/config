@@ -7,10 +7,8 @@ set $right k
 
 # Display settings
 default_border pixel 3
-client.focused #000000 #000000 #000000 #6a9fb5 #6a9fb5
+client.focused #6a9fb5 #6a9fb5 #6a9fb5 #6a9fb5 #6a9fb5
 output * bg #181818 solid_color
-#output * bg ~/.config/wallpapers/1338278.png fill
-gaps horizontal 240
 
 # compose key
 input * xkb_options compose:ralt
@@ -72,7 +70,6 @@ bindsym $mod+Shift+7 move container to workspace number 7
 bindsym $mod+Shift+8 move container to workspace number 8
 bindsym $mod+Shift+9 move container to workspace number 9
 bindsym $mod+Shift+0 move container to workspace number 10
-
 
 exec swayidle -w \
           timeout 300 'swaylock -f' \
