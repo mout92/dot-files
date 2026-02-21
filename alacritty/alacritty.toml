@@ -7,7 +7,7 @@ style = "semibold"
 
 [window]
 padding = { x = 8, y = 8 }
-opacity = 0.75
+opacity = 0.5
 
 [mouse]
 hide_when_typing = true
