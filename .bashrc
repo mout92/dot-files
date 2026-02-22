@@ -7,7 +7,7 @@ run() {
 }
 
 colors() {
-    printf "\033[1;31mHello - 31 \033[1;30;41mHello - 41\033[0m \033[5mHello - 4\033[0m\n"
+    printf "\033[1;31mHello - 31 \033[1;30;41mHello - 41\033[0m\n"
     printf "\033[1;32mHello - 32 \033[1;30;42mHello - 42\033[0m\n"
     printf "\033[1;33mHello - 33 \033[1;30;43mHello - 43\033[0m\n"
     printf "\033[1;34mHello - 34 \033[1;30;44mHello - 44\033[0m\n"
