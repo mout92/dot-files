@@ -1,0 +1,11 @@
+output eDP-1 disable
+output HDMI-A-2 enable
+output HDMI-A-2 mode 2560x1440@60Hz
+
+## 4:3 1440x1080
+#gaps horizontal 560
+#gaps vertical 180
+
+## 4:3 1600x1200 
+gaps horizontal 480
+gaps vertical 120
