@@ -8,9 +8,8 @@ default_border pixel 3
 client.focused #6a9fb5 #6a9fb5 #6a9fb5 #6a9fb5 #6a9fb5
 output * bg #181818 solid_color
 
-gaps horizontal 240
-output HDMI-A-2 disable
-
+gaps horizontal 480
+gaps vertical 120
 
 input * xkb_options compose:ralt
 input type:touchpad {
@@ -30,7 +29,6 @@ bindsym XF86AudioMicMute exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
 bindsym $mod+Return exec foot
 bindsym $mod+Backslash exec firefox
 bindsym $mod+Shift+q exec swaymsg exit
-bindsym $mod+Shift+l exec swaylock
 bindsym $mod+Shift+c reload
 bindsym $mod+q kill
 
@@ -63,10 +61,4 @@ bindsym $mod+Shift+8 move container to workspace number 8
 bindsym $mod+Shift+9 move container to workspace number 9
 bindsym $mod+Shift+0 move container to workspace number 10
 
-exec swayidle -w \
-          timeout 300 'swaylock -f' \
-          timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
-          before-sleep 'swaylock -f '
-
 include /etc/sway/config.d/*
-include ~/.config/sway/external
