@@ -4,12 +4,7 @@ set $down h
 set $up l
 set $right k
 
-default_border pixel 3
-client.focused #6a9fb5 #6a9fb5 #6a9fb5 #6a9fb5 #6a9fb5
-output * bg #181818 solid_color
-
-gaps horizontal 480
-gaps vertical 120
+default_border pixel 0
 
 input * xkb_options compose:ralt
 input type:touchpad {
@@ -28,6 +23,7 @@ bindsym XF86AudioMicMute exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
 
 bindsym $mod+Return exec foot
 bindsym $mod+Backslash exec firefox
+bindsym Print exec grim
 bindsym $mod+Shift+q exec swaymsg exit
 bindsym $mod+Shift+c reload
 bindsym $mod+q kill
